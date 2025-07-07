@@ -1,0 +1,15 @@
+{
+  "lastSync": "2025-07-07T05:59:57.213Z",
+  "sourceRepository": "google-gemini/gemini-cli",
+  "syncedFiles": [
+    "README.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "installation.md",
+    "usage.md",
+    "api.md",
+    "examples.md",
+    "troubleshooting.md"
+  ],
+  "totalFiles": 8
+}

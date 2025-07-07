@@ -1,0 +1,220 @@
+{
+  "lastTranslation": "2025-07-07T06:00:02.368Z",
+  "languages": 15,
+  "supportedLanguages": {
+    "zh": {
+      "name": "Chinese",
+      "code": "zh-CN",
+      "dir": "zh"
+    },
+    "es": {
+      "name": "Spanish",
+      "code": "es",
+      "dir": "es"
+    },
+    "fr": {
+      "name": "French",
+      "code": "fr",
+      "dir": "fr"
+    },
+    "de": {
+      "name": "German",
+      "code": "de",
+      "dir": "de"
+    },
+    "ja": {
+      "name": "Japanese",
+      "code": "ja",
+      "dir": "ja"
+    },
+    "ko": {
+      "name": "Korean",
+      "code": "ko",
+      "dir": "ko"
+    },
+    "pt": {
+      "name": "Portuguese",
+      "code": "pt",
+      "dir": "pt"
+    },
+    "ru": {
+      "name": "Russian",
+      "code": "ru",
+      "dir": "ru"
+    },
+    "it": {
+      "name": "Italian",
+      "code": "it",
+      "dir": "it"
+    },
+    "ar": {
+      "name": "Arabic",
+      "code": "ar",
+      "dir": "ar"
+    },
+    "hi": {
+      "name": "Hindi",
+      "code": "hi",
+      "dir": "hi"
+    },
+    "nl": {
+      "name": "Dutch",
+      "code": "nl",
+      "dir": "nl"
+    },
+    "sv": {
+      "name": "Swedish",
+      "code": "sv",
+      "dir": "sv"
+    },
+    "pl": {
+      "name": "Polish",
+      "code": "pl",
+      "dir": "pl"
+    },
+    "tr": {
+      "name": "Turkish",
+      "code": "tr",
+      "dir": "tr"
+    }
+  },
+  "translationResults": {
+    "CHANGELOG.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/CHANGELOG.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/CHANGELOG.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/CHANGELOG.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/CHANGELOG.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/CHANGELOG.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/CHANGELOG.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/CHANGELOG.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/CHANGELOG.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/CHANGELOG.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/CHANGELOG.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/CHANGELOG.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/CHANGELOG.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/CHANGELOG.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/CHANGELOG.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/CHANGELOG.md"
+    },
+    "CONTRIBUTING.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/CONTRIBUTING.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/CONTRIBUTING.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/CONTRIBUTING.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/CONTRIBUTING.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/CONTRIBUTING.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/CONTRIBUTING.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/CONTRIBUTING.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/CONTRIBUTING.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/CONTRIBUTING.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/CONTRIBUTING.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/CONTRIBUTING.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/CONTRIBUTING.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/CONTRIBUTING.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/CONTRIBUTING.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/CONTRIBUTING.md"
+    },
+    "README.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/README.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/README.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/README.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/README.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/README.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/README.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/README.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/README.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/README.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/README.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/README.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/README.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/README.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/README.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/README.md"
+    },
+    "api.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/api.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/api.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/api.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/api.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/api.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/api.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/api.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/api.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/api.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/api.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/api.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/api.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/api.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/api.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/api.md"
+    },
+    "examples.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/examples.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/examples.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/examples.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/examples.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/examples.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/examples.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/examples.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/examples.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/examples.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/examples.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/examples.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/examples.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/examples.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/examples.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/examples.md"
+    },
+    "installation.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/installation.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/installation.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/installation.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/installation.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/installation.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/installation.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/installation.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/installation.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/installation.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/installation.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/installation.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/installation.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/installation.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/installation.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/installation.md"
+    },
+    "troubleshooting.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/troubleshooting.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/troubleshooting.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/troubleshooting.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/troubleshooting.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/troubleshooting.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/troubleshooting.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/troubleshooting.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/troubleshooting.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/troubleshooting.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/troubleshooting.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/troubleshooting.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/troubleshooting.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/troubleshooting.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/troubleshooting.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/troubleshooting.md"
+    },
+    "usage.md": {
+      "zh": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/zh/usage.md",
+      "es": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/es/usage.md",
+      "fr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/fr/usage.md",
+      "de": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/de/usage.md",
+      "ja": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ja/usage.md",
+      "ko": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ko/usage.md",
+      "pt": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pt/usage.md",
+      "ru": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ru/usage.md",
+      "it": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/it/usage.md",
+      "ar": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/ar/usage.md",
+      "hi": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/hi/usage.md",
+      "nl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/nl/usage.md",
+      "sv": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/sv/usage.md",
+      "pl": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/pl/usage.md",
+      "tr": "/home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot/docs/tr/usage.md"
+    }
+  },
+  "totalTranslations": 120
+}

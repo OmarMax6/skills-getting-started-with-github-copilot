@@ -1,0 +1,193 @@
+name: Auto-Sync and Deploy Multi-Language Docs
+
+on:
+  # Run daily at 6 AM UTC
+  schedule:
+    - cron: '0 6 * * *'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      force_sync:
+        description: 'Force full synchronization'
+        required: false
+        default: 'false'
+        type: boolean
+      
+      languages:
+        description: 'Languages to translate (comma-separated, or "all")'
+        required: false
+        default: 'all'
+        type: string
+
+  # Trigger on push to main branch
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - '.github/workflows/auto-sync-docs.yml'
+
+jobs:
+  sync-and-translate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: |
+        npm ci
+        npm install -g @cloudflare/wrangler
+    
+    - name: Cache content sync
+      uses: actions/cache@v4
+      with:
+        path: |
+          docs/synced/
+          docs/translations/
+        key: ${{ runner.os }}-docs-sync-${{ hashFiles('scripts/sync-content.js') }}
+        restore-keys: |
+          ${{ runner.os }}-docs-sync-
+    
+    - name: Sync content from source repository
+      run: |
+        echo "🔄 Synchronizing content from google-gemini/gemini-cli..."
+        node scripts/sync-content.js
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        FORCE_SYNC: ${{ github.event.inputs.force_sync || 'false' }}
+    
+    - name: Translate content
+      run: |
+        echo "🌍 Translating content to multiple languages..."
+        node scripts/translate-content.js
+      env:
+        LANGUAGES: ${{ github.event.inputs.languages || 'all' }}
+        # In production, you would add translation API keys here
+        # GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        # DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+    
+    - name: Build VitePress documentation
+      run: |
+        echo "🏗️  Building documentation site..."
+        npm run docs:build
+      env:
+        NODE_ENV: production
+    
+    - name: Generate site manifest
+      run: |
+        echo "📋 Generating site manifest..."
+        node -e "
+          const manifest = {
+            buildTime: new Date().toISOString(),
+            languages: 16,
+            totalPages: $(find docs -name '*.md' | wc -l),
+            buildCommit: process.env.GITHUB_SHA,
+            buildNumber: process.env.GITHUB_RUN_NUMBER
+          };
+          require('fs').writeFileSync('docs/.vitepress/dist/manifest.json', JSON.stringify(manifest, null, 2));
+        "
+      env:
+        GITHUB_SHA: ${{ github.sha }}
+        GITHUB_RUN_NUMBER: ${{ github.run_number }}
+    
+    - name: Deploy to Cloudflare Pages
+      uses: cloudflare/pages-action@v1
+      with:
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        projectName: 'gemini-cli-docs'
+        directory: 'docs/.vitepress/dist'
+        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        wranglerVersion: '3'
+    
+    - name: Update deployment status
+      if: always()
+      run: |
+        echo "📊 Deployment Status: ${{ job.status }}"
+        if [ "${{ job.status }}" == "success" ]; then
+          echo "✅ Documentation successfully deployed!"
+          echo "🔗 Site: https://gemini-cli-docs.pages.dev"
+        else
+          echo "❌ Deployment failed. Check logs for details."
+        fi
+    
+    - name: Create deployment summary
+      if: always()
+      run: |
+        echo "## 📚 Multi-Language Documentation Deployment" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Status:** ${{ job.status == 'success' && '✅ Success' || '❌ Failed' }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Build Time:** $(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> $GITHUB_STEP_SUMMARY
+        echo "**Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+        echo "**Languages:** 16 (English + 15 translations)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ job.status }}" == "success" ]; then
+          echo "🔗 **Live Site:** https://gemini-cli-docs.pages.dev" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Available Languages:" >> $GITHUB_STEP_SUMMARY
+          echo "- [English](https://gemini-cli-docs.pages.dev/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [中文](https://gemini-cli-docs.pages.dev/zh/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Español](https://gemini-cli-docs.pages.dev/es/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Français](https://gemini-cli-docs.pages.dev/fr/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Deutsch](https://gemini-cli-docs.pages.dev/de/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [日本語](https://gemini-cli-docs.pages.dev/ja/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [한국어](https://gemini-cli-docs.pages.dev/ko/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Português](https://gemini-cli-docs.pages.dev/pt/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Русский](https://gemini-cli-docs.pages.dev/ru/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Italiano](https://gemini-cli-docs.pages.dev/it/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [العربية](https://gemini-cli-docs.pages.dev/ar/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [हिंदी](https://gemini-cli-docs.pages.dev/hi/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Nederlands](https://gemini-cli-docs.pages.dev/nl/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Svenska](https://gemini-cli-docs.pages.dev/sv/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Polski](https://gemini-cli-docs.pages.dev/pl/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Türkçe](https://gemini-cli-docs.pages.dev/tr/)" >> $GITHUB_STEP_SUMMARY
+        fi
+
+  # Separate job for monitoring and notifications
+  monitor:
+    runs-on: ubuntu-latest
+    needs: sync-and-translate
+    if: always()
+    
+    steps:
+    - name: Send notification on failure
+      if: needs.sync-and-translate.result == 'failure'
+      run: |
+        echo "📧 Would send failure notification here"
+        # In production, integrate with notification services:
+        # - Slack webhook
+        # - Discord webhook  
+        # - Email service
+        # - GitHub Issues API
+    
+    - name: Update status badge
+      if: always()
+      run: |
+        echo "🏷️  Would update status badge here"
+        # In production, update status badge or dashboard
+
+  # Cleanup job to manage storage
+  cleanup:
+    runs-on: ubuntu-latest
+    needs: sync-and-translate
+    if: always()
+    
+    steps:
+    - name: Cleanup old artifacts
+      run: |
+        echo "🧹 Would cleanup old deployment artifacts here"
+        # In production:
+        # - Clean up old builds
+        # - Manage cache storage
+        # - Archive old translations

@@ -1,0 +1,64 @@
+name = "gemini-cli-docs"
+compatibility_date = "2024-01-15"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./docs/.vitepress/dist"
+
+[vars]
+NODE_ENV = "production"
+VITE_APP_VERSION = "e5e73c0"
+VITE_BUILD_DATE = "2025-07-07T06:06:28.921Z"
+
+# Custom headers for security and performance
+[[headers]]
+for = "/*"
+  [headers.values]
+  X-Frame-Options = "DENY"
+  X-Content-Type-Options = "nosniff"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+  Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:;"
+
+[[headers]]
+for = "*.html"
+  [headers.values]
+  Cache-Control = "public, max-age=3600"
+
+[[headers]]
+for = "*.js"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "*.css"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "*.woff2"
+  [headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+for = "*.png"
+  [headers.values]
+  Cache-Control = "public, max-age=86400"
+
+[[headers]]
+for = "*.jpg"
+  [headers.values]
+  Cache-Control = "public, max-age=86400"
+
+[[headers]]
+for = "*.svg"
+  [headers.values]
+  Cache-Control = "public, max-age=86400"
+
+# Redirects for legacy URLs
+[[redirects]]
+from = "/docs/*"
+to = "/:splat"
+status = 301
+
+[[redirects]]
+from = "/documentation/*"
+to = "/:splat"
+status = 301
