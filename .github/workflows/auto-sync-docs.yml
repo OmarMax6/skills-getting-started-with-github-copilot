@@ -137,7 +137,8 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Available Languages:" >> $GITHUB_STEP_SUMMARY
           echo "- [English](https://gemini-cli-docs.pages.dev/)" >> $GITHUB_STEP_SUMMARY
-          echo "- [中文](https://gemini-cli-docs.pages.dev/zh/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [简体中文](https://gemini-cli-docs.pages.dev/zh/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [繁體中文](https://gemini-cli-docs.pages.dev/zh-tw/)" >> $GITHUB_STEP_SUMMARY
           echo "- [Español](https://gemini-cli-docs.pages.dev/es/)" >> $GITHUB_STEP_SUMMARY
           echo "- [Français](https://gemini-cli-docs.pages.dev/fr/)" >> $GITHUB_STEP_SUMMARY
           echo "- [Deutsch](https://gemini-cli-docs.pages.dev/de/)" >> $GITHUB_STEP_SUMMARY
@@ -148,9 +149,8 @@ jobs:
           echo "- [Italiano](https://gemini-cli-docs.pages.dev/it/)" >> $GITHUB_STEP_SUMMARY
           echo "- [العربية](https://gemini-cli-docs.pages.dev/ar/)" >> $GITHUB_STEP_SUMMARY
           echo "- [हिंदी](https://gemini-cli-docs.pages.dev/hi/)" >> $GITHUB_STEP_SUMMARY
-          echo "- [Nederlands](https://gemini-cli-docs.pages.dev/nl/)" >> $GITHUB_STEP_SUMMARY
-          echo "- [Svenska](https://gemini-cli-docs.pages.dev/sv/)" >> $GITHUB_STEP_SUMMARY
-          echo "- [Polski](https://gemini-cli-docs.pages.dev/pl/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [Bahasa Indonesia](https://gemini-cli-docs.pages.dev/id/)" >> $GITHUB_STEP_SUMMARY
+          echo "- [தமிழ்](https://gemini-cli-docs.pages.dev/ta/)" >> $GITHUB_STEP_SUMMARY
           echo "- [Türkçe](https://gemini-cli-docs.pages.dev/tr/)" >> $GITHUB_STEP_SUMMARY
         fi
 

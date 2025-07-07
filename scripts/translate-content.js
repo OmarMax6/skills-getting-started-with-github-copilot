@@ -14,7 +14,8 @@ const axios = require('axios');
 class ContentTranslator {
     constructor() {
         this.supportedLanguages = {
-            'zh': { name: 'Chinese', code: 'zh-CN', dir: 'zh' },
+            'zh': { name: 'Chinese Simplified', code: 'zh-CN', dir: 'zh' },
+            'zh-tw': { name: 'Chinese Traditional', code: 'zh-TW', dir: 'zh-tw' },
             'es': { name: 'Spanish', code: 'es', dir: 'es' },
             'fr': { name: 'French', code: 'fr', dir: 'fr' },
             'de': { name: 'German', code: 'de', dir: 'de' },
@@ -25,9 +26,8 @@ class ContentTranslator {
             'it': { name: 'Italian', code: 'it', dir: 'it' },
             'ar': { name: 'Arabic', code: 'ar', dir: 'ar' },
             'hi': { name: 'Hindi', code: 'hi', dir: 'hi' },
-            'nl': { name: 'Dutch', code: 'nl', dir: 'nl' },
-            'sv': { name: 'Swedish', code: 'sv', dir: 'sv' },
-            'pl': { name: 'Polish', code: 'pl', dir: 'pl' },
+            'id': { name: 'Indonesian', code: 'id', dir: 'id' },
+            'ta': { name: 'Tamil', code: 'ta', dir: 'ta' },
             'tr': { name: 'Turkish', code: 'tr', dir: 'tr' }
         };
         

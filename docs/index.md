@@ -8,7 +8,7 @@ This documentation provides complete coverage of the Gemini CLI tool, automatica
 
 ## Features
 
-- **Multi-language Support**: Available in 15+ languages including English, Chinese, Spanish, French, German, Japanese, Korean, Portuguese, Russian, Italian, Arabic, Hindi, Dutch, Swedish, Polish, and Turkish
+- **Multi-language Support**: Available in 16 languages including English, Chinese (Simplified & Traditional), Spanish, French, German, Japanese, Korean, Portuguese, Russian, Italian, Arabic, Hindi, Indonesian, Tamil, and Turkish
 - **Automated Synchronization**: Content automatically updates from the source repository
 - **AI-powered Translation**: High-quality translations using advanced language models
 - **Fast Search**: Local search functionality across all languages
@@ -22,7 +22,8 @@ Choose your preferred language from the language selector in the navigation bar,
 ### Quick Language Access
 
 - [English](/) - Original documentation
-- [中文 (Chinese)](/zh/) - 中文文档
+- [简体中文](/zh/) - 简体中文文档
+- [繁體中文](/zh-tw/) - 繁體中文文檔
 - [Español](/es/) - Documentación en español
 - [Français](/fr/) - Documentation française
 - [Deutsch](/de/) - Deutsche Dokumentation
@@ -33,9 +34,8 @@ Choose your preferred language from the language selector in the navigation bar,
 - [Italiano](/it/) - Documentazione italiana
 - [العربية](/ar/) - الوثائق العربية
 - [हिंदी](/hi/) - हिंदी दस्तावेज़
-- [Nederlands](/nl/) - Nederlandse documentatie
-- [Svenska](/sv/) - Svensk dokumentation
-- [Polski](/pl/) - Dokumentacja polska
+- [Bahasa Indonesia](/id/) - Dokumentasi Indonesia
+- [தமிழ்](/ta/) - தமிழ் ஆவணங்கள்
 - [Türkçe](/tr/) - Türkçe belgeler
 
 ## Navigation

@@ -37,17 +37,21 @@ A complete solution for automatically synchronizing, translating, and deploying 
 ## 🌐 Supported Languages
 
 1. **English** (en) - Source language
-2. **Chinese** (zh) - 中文
-3. **Spanish** (es) - Español
-4. **French** (fr) - Français
-5. **German** (de) - Deutsch
-6. **Japanese** (ja) - 日本語
-7. **Korean** (ko) - 한국어
-8. **Portuguese** (pt) - Português
-9. **Russian** (ru) - Русский
-10. **Italian** (it) - Italiano
-11. **Arabic** (ar) - العربية
-12. **Hindi** (hi) - हिंदी
+2. **Chinese Simplified** (zh) - 简体中文
+3. **Chinese Traditional** (zh-tw) - 繁體中文
+4. **Spanish** (es) - Español
+5. **French** (fr) - Français
+6. **German** (de) - Deutsch
+7. **Japanese** (ja) - 日本語
+8. **Korean** (ko) - 한국어
+9. **Portuguese** (pt) - Português
+10. **Russian** (ru) - Русский
+11. **Italian** (it) - Italiano
+12. **Arabic** (ar) - العربية
+13. **Hindi** (hi) - हिंदी
+14. **Indonesian** (id) - Bahasa Indonesia
+15. **Tamil** (ta) - தமிழ்
+16. **Turkish** (tr) - Türkçe
 13. **Dutch** (nl) - Nederlands
 14. **Swedish** (sv) - Svenska
 15. **Polish** (pl) - Polski

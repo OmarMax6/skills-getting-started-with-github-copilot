@@ -14,11 +14,18 @@ export default defineConfig({
       description: 'Multi-language documentation for Google Gemini CLI'
     },
     zh: {
-      label: '中文',
+      label: '简体中文',
       lang: 'zh-CN',
       dir: '/zh/',
       title: 'Gemini CLI 文档',
       description: 'Google Gemini CLI 多语言文档'
+    },
+    'zh-tw': {
+      label: '繁體中文',
+      lang: 'zh-TW',
+      dir: '/zh-tw/',
+      title: 'Gemini CLI 文檔',
+      description: 'Google Gemini CLI 多語言文檔'
     },
     es: {
       label: 'Español',
@@ -90,26 +97,19 @@ export default defineConfig({
       title: 'Gemini CLI दस्तावेज़',
       description: 'Google Gemini CLI के लिए बहुभाषी दस्तावेज़'
     },
-    nl: {
-      label: 'Nederlands',
-      lang: 'nl',
-      dir: '/nl/',
-      title: 'Gemini CLI Documentatie',
-      description: 'Meertalige documentatie voor Google Gemini CLI'
+    id: {
+      label: 'Bahasa Indonesia',
+      lang: 'id',
+      dir: '/id/',
+      title: 'Dokumentasi Gemini CLI',
+      description: 'Dokumentasi multi-bahasa untuk Google Gemini CLI'
     },
-    sv: {
-      label: 'Svenska',
-      lang: 'sv',
-      dir: '/sv/',
-      title: 'Gemini CLI Dokumentation',
-      description: 'Flerspråkig dokumentation för Google Gemini CLI'
-    },
-    pl: {
-      label: 'Polski',
-      lang: 'pl',
-      dir: '/pl/',
-      title: 'Dokumentacja Gemini CLI',
-      description: 'Dokumentacja wielojęzyczna dla Google Gemini CLI'
+    ta: {
+      label: 'தமிழ்',
+      lang: 'ta',
+      dir: '/ta/',
+      title: 'Gemini CLI ஆவணங்கள்',
+      description: 'Google Gemini CLI க்கான பல மொழி ஆவணங்கள்'
     },
     tr: {
       label: 'Türkçe',
